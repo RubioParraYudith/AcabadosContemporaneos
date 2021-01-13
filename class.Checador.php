@@ -116,7 +116,7 @@
                 }
                 Cantidad($con_mysql, $usr, $fol, $c);
             }
-            else { echo "<h3 id='mensaje'>Ya has terminado tu jornada laboral</h3>"; }
+            else { echo "<h3 id='mensaje'>Jornada laboral terminada</h3>"; }
             mysqli_close($con_mysql);
         }
         function consultaSemana($con_mysql, $usr)
@@ -157,7 +157,7 @@
 
     function Cantidad ($con_mysql, $usr, $fol, $c)
         {
-            #Aqui va la condicion del conteo de horas trabajadas para registrarlas en  hrsTrabajadas_dia1 int,
+            #condicion del conteo de horas trabajadas para registrarlas en  hrsTrabajadas_dia1
             $bandera = false;
             switch($c)
             {
