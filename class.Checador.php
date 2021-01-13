@@ -254,7 +254,7 @@
             $consulta = mysqli_query($con_mysql, $comando);
             if(!$consulta){ echo mysqli_error($con_mysql); }
             if ($c == 4)
-            { echo "<h3 id='mensaje'>Ya has terminado tu jornada laboral</h3>"; }
+            { echo "<h3 id='mensaje'>Jornada laboral terminada</h3>"; }
             
         }
         function Horas($usr, $fol, $c)
