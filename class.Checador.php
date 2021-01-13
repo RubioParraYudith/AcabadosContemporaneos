@@ -172,7 +172,6 @@
                     break;
                 case 4:
                     $hrs = Horas($usr, $fol, $c);
-                    echo "HORAS TRABAJADAS".$hrs;
                     break;
                 default:
                     break;
