@@ -53,7 +53,13 @@
                             header("Location: consulta_usr.php?varusr=$usr");
                         }
                         else
-                            echo "<div id='datos2'><span id=datos><strong>¡Error!</strong>Los datos ingresados son incorrectos.</span></div>";
+                        {
+                            #echo "<div id='datos2'><span id=datos><strong>¡Error!</strong>Los datos ingresados son incorrectos.</span></div>";
+                            echo "<id='notes'><script type='text/javascript'>
+                            setTimeout( function(){ window.location.href= 'consulta.php'; }, 1000 );
+                            alert('LOS DATOS INGRESADOS SON INCORRECTOS');
+                            </script>";
+                        }
                     }
                 ?>
                 </strong>

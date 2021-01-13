@@ -126,13 +126,15 @@
                                             #header("Location: registro.php");
                                         }
                                         else
+                                        {
                                            #echo "<h2 id='datos2'><span id=datos><strong>¡Error!</strong>Los datos ingresados son incorrectos</span></h2>"; 
                                            echo "<id='notes'><script type='text/javascript'>
+                                           setTimeout( function(){ window.location.href= 'registro.php'; }, 1000 );
                                            alert('LOS DATOS INGRESADOS SON INCORRECTOS');
-                                           </script>";                                    }
+                                           </script>";
+                                        }
+                                    }
                                 }
-                                }
-                                
                             ?>
                         </tr>
                     </tbody>
